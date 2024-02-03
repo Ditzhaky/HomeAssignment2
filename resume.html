@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyPage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>$(window).scroll(function(){if($(window).scrollTop()){$("nav").addClass("black");}else{
+        $("nav").removeClass("black");  
+      }})</script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+    </script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</head>
+<header>
+<body id="resume">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+            <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        </header>
+        <div class="content-resume">
+            <h1>Resume</h1>
+    
+            <h3>Professional Experience</h3>
+            
+               <p> PMO - Rafael Defense Company, Haifa -   
+                works about classified projects and helps to protect the state of Israel.</p>
+                <p>Private teacher in a private teaching company.
+                     I gained experience with teaching small groups of students. I teach Math and English.</p>
+    
+            <h3>Formal Qualifications</h3>
+            
+                  <p>  BSc in industrial engineering and management - 
+                    Ruppin academic center, Emek Hefer Regional Council. Expected graduate - 08/25 </p>
+    
+                    <h1>Skills</h1>
+                    <ul>
+                     <li>Experienced with IBM SPSS statistics program.</li>
+                     <li>Familiar with CPR medical system.</li>
+                     <li>Proficient with C++, C#, SQL and Microsoft Excel.</li>
+                     <li>Strong mathematical background</li>
+                     <li>Strong leadership abilities</li>   
+                    </ul> 
+                     
+    </div>
+    
+    
+        
+    <div class="image-container-resume">
+        <img src="code.jpg" alt="coding picture">
+        <img src="RAFa.jpg" alt="Rafael logo">
+        <img src="Quadratic-Formula.png" alt="formula picture">
+        <img src="leader.jpg" alt="leadership picture">
+    
+    </div>
+    <footer>
+        <p>
+            <a href="https://www.linkedin.com/in/danielitzhaky/" target="_blank">Linkedin</a> 
+        </p>
+    </footer>
+     
+    
+    
+    </body>
+    </html>
+    

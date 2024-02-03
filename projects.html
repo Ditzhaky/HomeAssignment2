@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyPage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>$(window).scroll(function(){if($(window).scrollTop()){$("nav").addClass("black");}else{
+        $("nav").removeClass("black");  
+      }})</script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+    </script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</head>
+<header>
+<body id="project">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+            <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        </nav>
+</header>
+<section class="projects-content">
+        
+    <!-- <div class="projects-content-div">
+    
+        <div class="box">
+            <img src="images2/חיילים.jpg" alt="soldiers">
+            Haravot Barzel war
+        </div>
+        <div class="box">
+            <img src="images2/dog.jpg" alt="dog"> 
+            Prevention of Cruelty to Animals  
+        </div>  
+            <div class="box"> 
+                <img src="images2/Logo_perah2.jpeg" alt="perach">
+                Perach scholarhip
+     
+    </div>  -->
+
+
+    <h3>Haravot Barzel war -</h3>
+    <p>As a combat medic I helped in Rambam hostpital to take care of injured citizens.</p>
+    <h3>Prevention of Cruelty to Animals -</h3>
+    <p>I love animals, espically dogs. I volunteer in dogs shelter.</p>
+    <h3>Perach scholarship - </h3>
+    <p>I participate in Perach scholarhip for the last 3 years, helping low-age students to improve their
+        social and studential skills. 
+    </p>
+</div>
+</section>
+<summary>For summary,I am a student with full passion and hunger to succeed. Not afraid of hard work and love what I chose to study. My hobbies fill me up and I enjoy life.</summary>
+<footer>
+    
+    <p>
+        <a href="https://www.linkedin.com/in/danielitzhaky/" target="_blank">Linkedin</a> 
+    </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyPage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>$(window).scroll(function(){if($(window).scrollTop()){$("nav").addClass("black");}else{
+        $("nav").removeClass("black");  
+      }})</script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+    </script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</head>
+<body id="about">
+<header>
+
+
+<nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <ul>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+    </nav>
+</header>
+ <div class="cards-container">
+<div class="card">
+    <img src="Football.jpg"  alt="Football"> 
+    <div class="card-body">
+<h1 class="card-title">football</h1>
+<p class="card-sub-title">I am a hardcore football fan. I like Maccabi Haifa and Barcelona football clubs.
+    I also have a membership to Maccabi's home games which located in Sammy Ofer, Haifa.</p>
+<button class="card-btn"><a href="https://en.wikipedia.org/wiki/Football"target="_blank">football wikipedia</a></button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="sport.png"  alt="sports"> 
+    <div class="card-body">
+<h1 class="card-title">Sports</h1>
+<p class="card-sub-title">I'm a sports fan, work out in the gym 4 times a week and run half marathons in my spare time.</p>
+
+<button class="card-btn"><a href="https://en.wikipedia.org/wiki/Sport"target="_blank">Sports wikipedia</a></button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="BSc.png"  alt="BSc"> 
+    <div class="card-body">
+<h1 class="card-title">BSc</h1>
+<p class="card-sub-title"> I am a third year industrial engineering and management student.
+     I study at Rupin Academic Center.</p>
+
+<button class="card-btn"><a href="https://www.ruppin.ac.il/"target="_blank">Ruppin website</a></button>
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+
+<footer>
+    <p>
+        <a href="https://www.linkedin.com/in/danielitzhaky/" target="_blank">Linkedin</a> 
+    </p>
+</footer>
+    
+</body>
+</html>
